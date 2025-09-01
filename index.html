@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Smart Disaster Alert System – Nexora Team 29</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="logo">Nexora <span>Team 29</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Project</a></li>
+      <li><a href="#components">Components</a></li>
+      <li><a href="#dashboard">Sensor Dashboard</a></li>
+    </ul>
+  </nav>
+  <section id="home" class="hero">
+    <div class="glass hero-text">
+      <h1><span>Smart Disaster Alert System</span></h1>
+      <p>Exhibition Project by <b>Nexora Team 29</b></p>
+      <button onclick="scrollToSection('about')">Learn More</button>
+    </div>
+    <div class="background-anim"></div>
+  </section>
+  <section id="about" class="about glass fade-in">
+    <h2>About the Project</h2>
+    <p>
+      Our system uses advanced IoT sensors to detect disasters—smoke, gas leak, flood & vibrations—and provides real-time alerts through connected devices.<br>
+      <br><span class="focus-highlight">Safety meets technology.</span>
+    </p>
+    <div class="features">
+      <div class="feature-card animated-card"><h3>Real-Time Sensing</h3></div>
+      <div class="feature-card animated-card"><h3>Wireless Dashboard</h3></div>
+      <div class="feature-card animated-card"><h3>Instant Alerts</h3></div>
+      <div class="feature-card animated-card"><h3>Futuristic Interface</h3></div>
+    </div>
+  </section>
+  <section id="components" class="components glass fade-in">
+    <h2>Hardware Components</h2>
+    <ul>
+      <li>9V Small Piezo Buzzer</li>
+      <li>NodeMCU ESP8266 WiFi Development Board</li>
+      <li>5mm RGB LED (Pack of 10)</li>
+      <li>MQ-2 Gas Sensor Module</li>
+      <li>Vibration Sensor Module</li>
+      <li>High Sensitivity Water Level Sensor</li>
+    </ul>
+  </section>
+  <section id="dashboard" class="dashboard glass fade-in">
+    <h2>Live Sensor Dashboard</h2>
+    <div class="sensors-grid">
+      <div class="sensor-card">
+        <h4>Gas Sensor (<span id="gas-val">--</span> ppm)</h4>
+        <div class="progress-bar outer"><div class="inner" id="gas-bar"></div></div>
+      </div>
+      <div class="sensor-card">
+        <h4>Water Level (<span id="water-val">--</span> %)</h4>
+        <div class="progress-bar outer water"><div class="inner" id="water-bar"></div></div>
+      </div>
+      <div class="sensor-card">
+        <h4>Vibration (<span id="vib-val">--</span>)</h4>
+        <div class="progress-bar outer vib"><div class="inner" id="vib-bar"></div></div>
+      </div>
+    </div>
+    <p style="font-size:0.9em;"><em>Demo: Mock sensor data auto-refresh every few seconds.</em></p>
+  </section>
+  <footer class="glass">
+    &copy; 2025 Nexora Team 29 | Smart Disaster Alert System
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
